@@ -23,7 +23,6 @@ let rating = "";
 for (let i = 0; i < value.length; i++) {
   value[i].addEventListener("click", function () {
     rating = this.innerText;
-    console.log(rating);
     return;
   });
 }
