@@ -1,0 +1,33 @@
+.thanks {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+
+  .img {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__selected {
+    display: inline-block;
+    color: $color-primary;
+    background-color: $color-blue-dark-2;
+    border-radius: 100px;
+    text-align: center;
+    align-self: center;
+    width: 60%;
+    padding: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    text-align: center;
+    line-height: 1.5;
+  }
+}

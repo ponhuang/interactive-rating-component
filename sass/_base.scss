@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: "Overpass", sans-serif;
+  color: $color-gray-medium;
+  background-color: $color-blue-darkest;
+}
+
+// REUSABLE
+.title-h2 {
+  color: $color-white;
+  font-weight: 700;
+}
+
+.container {
+  background-color: $color-blue-dark;
+  min-width: 25rem;
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 5rem auto;
+  padding: 3rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+// FOOTER
+
+.attribution {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  font-size: 1.2rem;
+  text-align: center;
+}
+.attribution a {
+  color: $color-gray-light;
+}
+
+// 600px
+@media screen and (min-width: 37.6em) {
+  .container {
+    max-width: 35rem;
+  }
+}

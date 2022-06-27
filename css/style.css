@@ -1,0 +1,122 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  line-height: 1; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: "Overpass", sans-serif;
+  color: #7c8798;
+  background-color: #121417; }
+
+.title-h2 {
+  color: white;
+  font-weight: 700; }
+
+.container {
+  background-color: #252d37;
+  min-width: 25rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem auto;
+  padding: 3rem; }
+
+.hidden {
+  visibility: hidden; }
+
+.attribution {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  font-size: 1.2rem;
+  text-align: center; }
+
+.attribution a {
+  color: #959eac; }
+
+@media screen and (min-width: 37.6em) {
+  .container {
+    max-width: 35rem; } }
+
+.rating {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%); }
+  .rating__icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: #343f4c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; }
+    .rating__icon img {
+      display: block; }
+  .rating__text {
+    line-height: 1.5;
+    padding: 2rem 0; }
+  .rating__score {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem; }
+
+.btn {
+  display: inline-block;
+  border: none;
+  color: #959eac;
+  background-color: #343f4c;
+  border-radius: 100px;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .btn__score {
+    width: 4rem;
+    height: 4rem; }
+    .btn__score:hover {
+      background-color: #7c8798;
+      color: white; }
+  .btn .active {
+    background-color: #fb7413;
+    color: white; }
+  .btn__submit {
+    background-color: #fb7413;
+    padding: 1.5rem;
+    color: white;
+    letter-spacing: 3px; }
+    .btn__submit:hover {
+      background-color: white;
+      color: #fb7413; }
+
+.thanks {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%); }
+  .thanks .img {
+    text-align: center;
+    margin-bottom: 3rem; }
+  .thanks__selected {
+    display: inline-block;
+    color: #fb7413;
+    background-color: #343f4c;
+    border-radius: 100px;
+    text-align: center;
+    align-self: center;
+    width: 60%;
+    padding: 1rem;
+    margin-bottom: 3rem; }
+  .thanks__title {
+    text-align: center;
+    margin-bottom: 2rem; }
+  .thanks__text {
+    text-align: center;
+    line-height: 1.5; }

@@ -1,0 +1,69 @@
+// RATING STATE
+.rating {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: $color-blue-dark-2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__text {
+    line-height: 1.5;
+    padding: 2rem 0;
+  }
+
+  &__score {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  color: $color-gray-light;
+  background-color: $color-blue-dark-2;
+  border-radius: 100px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &__score {
+    width: 4rem;
+    height: 4rem;
+
+    &:hover {
+      background-color: $color-gray-medium;
+      color: $color-white;
+    }
+  }
+  .active {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &__submit {
+    background-color: $color-primary;
+    padding: 1.5rem;
+    color: $color-white;
+    letter-spacing: 3px;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-primary;
+    }
+  }
+}
