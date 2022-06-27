@@ -14,6 +14,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+    box-shadow: 1px 0.2px 2px $color-gray-light;
 
     img {
       display: block;
@@ -44,13 +45,19 @@
   &__score {
     width: 4rem;
     height: 4rem;
+    box-shadow: 1px 0.3px 2px $color-gray-light;
 
     &:hover {
       background-color: $color-gray-medium;
       color: $color-white;
     }
+
+    &:active {
+      background-color: $color-primary;
+      color: $color-white;
+    }
   }
-  .active {
+  .btn__score .active {
     background-color: $color-primary;
     color: $color-white;
   }
@@ -60,6 +67,7 @@
     padding: 1.5rem;
     color: $color-white;
     letter-spacing: 3px;
+    box-shadow: 1px 0.5px 2px $color-gray-light;
 
     &:hover {
       background-color: $color-white;

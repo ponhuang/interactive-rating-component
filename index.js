@@ -16,8 +16,24 @@ for (let i = 0; i < btnScore.length; i++) {
   });
 }
 
-// SUBMIT --> THANK YOU
+// Seleted Score Value
+let value = document.querySelectorAll(".btn__score");
+let rating = "";
+
+for (let i = 0; i < value.length; i++) {
+  value[i].addEventListener("click", function () {
+    rating = this.innerText;
+    console.log(rating);
+    return;
+  });
+}
+
+// SUBMIT button --> THANK YOU
 document.querySelector(".btn__submit").addEventListener("click", function () {
   document.querySelector(".rating").classList.add("hidden");
   document.querySelector(".thanks").classList.remove("hidden");
+
+  document.querySelector(
+    ".thanks__selected"
+  ).textContent = `You selected ${rating} out of 5`;
 });
