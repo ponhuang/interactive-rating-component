@@ -82,13 +82,25 @@ document.querySelector(
 ).textContent = `You selected ${rating} out of 5`;
 ```
 
-### Continued development
+- Learn how to add "active" class to current Element
 
-There is one other thing haven't been solved yet:
-when click the rating value, Javascript toggle the "active" class but didn't apply the property.
-Also, it should just effect to single rating value when user click it. In this 1st version, if user click 4 in the first time, second time, he click 2, both buttons add "active" class.
+```js
+const btnScore = document.querySelectorAll(".btn__score");
 
-I have no idea how to solve this yet, maybe this is beyond what I have learned so far. But I would definitely love to know the solution. If you have idea and would love to share with me, I would be appriate that. :)
+for (let i = 0; i < btnScore.length; i++) {
+  btnScore[i].addEventListener("click", function () {
+    let current = document.querySelectorAll(".active");
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+    this.className += " active";
+  }):
+}
+```
+
+### Useful resources
+
+- [Add active class to current element](https://www.w3schools.com/howto/howto_js_active_element.asp) - This helped me to know to to add active class to current element from W3 SCHOOL
 
 ## Author
 
@@ -96,3 +108,7 @@ Pon Huang
 
 - Instagram - [Pon Huang](https://www.instagram.com/ponhuang/)
 - Art Blog - [une felt](https://une722.wordpress.com)
+
+## Acknowledgments
+
+Thank [Raj Prasad Sanjel](https://www.frontendmentor.io/profile/RajSanjel) who gave advices to imporve my challenge project.

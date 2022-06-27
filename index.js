@@ -8,24 +8,23 @@ btnSubmit.addEventListener("click", function () {
   btnSubmit.style.color = "hsl(25, 97%, 53%)";
 });
 
+// Seleted Score Value
 const btnScore = document.querySelectorAll(".btn__score");
 
 for (let i = 0; i < btnScore.length; i++) {
   btnScore[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-  });
-}
+    let current = document.querySelectorAll(".active");
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+    this.className += " active";
 
-// Seleted Score Value
-let value = document.querySelectorAll(".btn__score");
-let rating = "";
-
-for (let i = 0; i < value.length; i++) {
-  value[i].addEventListener("click", function () {
     rating = this.innerText;
     return;
   });
 }
+
+let rating = "1";
 
 // SUBMIT button --> THANK YOU
 document.querySelector(".btn__submit").addEventListener("click", function () {

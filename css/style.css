@@ -47,13 +47,17 @@ body {
 
 @media screen and (min-width: 37.6em) {
   .container {
-    max-width: 35rem; } }
+    max-width: 35rem; }
+  .attribution {
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%); } }
 
 .rating {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%, -30%); }
+  transform: translate(-50%, -20%); }
   .rating__icon {
     width: 4rem;
     height: 4rem;
@@ -92,9 +96,6 @@ body {
     .btn__score:active {
       background-color: #fb7413;
       color: white; }
-  .btn .btn__score .active {
-    background-color: #fb7413;
-    color: white; }
   .btn__submit {
     background-color: #fb7413;
     padding: 1.5rem;
@@ -105,11 +106,15 @@ body {
       background-color: white;
       color: #fb7413; }
 
+.active {
+  background-color: #fb7413;
+  color: white; }
+
 .thanks {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%, -30%); }
+  transform: translate(-50%, -20%); }
   .thanks .img {
     text-align: center;
     margin-bottom: 3rem; }
@@ -120,7 +125,7 @@ body {
     border-radius: 100px;
     text-align: center;
     align-self: center;
-    width: 60%;
+    width: 70%;
     padding: 1rem;
     margin-bottom: 3rem; }
   .thanks__title {
