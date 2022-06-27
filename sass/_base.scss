@@ -36,6 +36,7 @@ body {
 
   margin: 5rem auto;
   padding: 3rem;
+  z-index: 10;
 }
 
 .hidden {
@@ -46,11 +47,12 @@ body {
 
 .attribution {
   position: absolute;
-  top: 80%;
+  bottom: 10%;
   left: 50%;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -10%);
   font-size: 1.2rem;
   text-align: center;
+  z-index: -10;
 }
 .attribution a {
   color: $color-gray-light;
